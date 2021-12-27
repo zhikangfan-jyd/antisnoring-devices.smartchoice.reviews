@@ -5,10 +5,10 @@
               <span class="num">{{index + 1}}</span>
           </div>
           <div class="corner-box" v-if="index == 0">
-              <span class="text">50% Discount Today!</span>
+              <span class="text">40% Discount Today!</span>
           </div>
-          <div class="big-title" v-if="index == productList.length - 1">The Most Popular Anti-Snoring Device In 2020</div>
-          <a :href="product.link" @click.stop="handleExecute" target="_blank" class="product-link-box">
+          <div class="big-title" v-if="index == productList.length - 1">The Most Popular Anti-Snoring Device In 2021</div>
+          <a :href="product.link" target="_blank" class="product-link-box">
             <div class="product-container">
                 <div class="product-container-left">
                     <div class="picture-box">
@@ -28,7 +28,7 @@
                                 <p class="text">{{item.text}}</p>
                             </li>
                         </ul>
-                        <p class="buys" v-if="index == 0 || index == productList.length - 1">Buy 1 Get 1 Free NOW</p>
+                        <p class="buys" v-if="index == 0 || index == productList.length - 1">Buy 3 Get 2 Free NOW</p>
                     </div>
                 </div>
                 <div class="product-container-right">
@@ -38,7 +38,7 @@
                         <span class="good-icon" v-if="index == 1"></span>
                     </p>
                     <p class="rate-box"><span class="score">{{product.score}}</span><span>/10</span></p>
-                    <a :href="product.link" @click.stop="handleExecute" target="_blank" class="btn">
+                    <a :href="product.link" target="_blank" class="btn">
                         <span class="text">Visit Site</span>
                         <span class="icon"></span>
                     </a>
@@ -58,9 +58,9 @@ export default {
             productList: [
                 {
                     id: 1,
-                    name: 'StopSnore Clip',
+                    name: 'SilentSnore',
                     picture: require('../assets/image/snoring/stopSnoreClip1.png'),
-                    link: 'https://www.esplma.com/7QLQCMW/59DPXX5/?uid=6865',
+                    link: 'https://newxventions.com/intl_7/?prod=silentsnore&net=9785&aff={AFFID}&sid={SUBID}&cid={CLICKID}',
                     reviewLink: '',
                     buys: 586,
                     strengthList: [
@@ -94,7 +94,7 @@ export default {
                     id: 2,
                     name: 'Sleep Connection',
                     picture: require('../assets/image/snoring/sleepConnection.png'),
-                    link: 'https://www.edlwss.com/7QLQCMW/4GFQX62/?uid=4168',
+                    link: 'https://www.edlwss.com/88MJP83/4CF3291/?uid=3952',
                     reviewLink: '',
                     buys: 586,
                     strengthList: [
@@ -126,7 +126,7 @@ export default {
                     id: 3,
                     name: 'Snore Strap',
                     picture: require('../assets/image/snoring/snoreStrap.png'),
-                    link: 'https://hyperstech.com/intl/order.php?prod=snorestrap&net=9785&aff={AFFID}&sid={SUBID}&cid={CLICKID}',
+                    link: 'https://buysmartproduct.com/intl/?prod=snorestrap&net=9785&aff={AFFID}&sid={SUBID}&cid={CLICKID}',
                     reviewLink: '',
                     buys: 586,
                     strengthList: [
@@ -155,7 +155,7 @@ export default {
                 },
                 {
                     id: 4,
-                    name: 'SilentSnore',
+                    name: 'StopSnore Clip',
                     picture: require('../assets/image/snoring/silentSnore.png'),
                     link: 'https://hypertechx.com/ps/silentsnore/index.php?net=9785&aff={AFFID}&sid={SUBID}&cid={CLICKID}',
                     reviewLink: '',
@@ -188,9 +188,9 @@ export default {
                 },
                 {
                     id: 1,
-                    name: 'StopSnore Clip',
+                    name: 'SilentSnore',
                     picture: require('../assets/image/snoring/stopSnoreClip2.png'),
-                    link: 'https://www.esplma.com/7QLQCMW/59DPXX5/?uid=6865',
+                    link: 'https://newxventions.com/intl_7/?prod=silentsnore&net=9785&aff={AFFID}&sid={SUBID}&cid={CLICKID}',
                     reviewLink: '',
                     buys: 586,
                     strengthList: [
@@ -224,9 +224,6 @@ export default {
         }
     },
     methods: {
-        handleExecute() {
-            window.execute();
-        }
     }
 
 }
